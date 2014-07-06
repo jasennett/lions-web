@@ -1,0 +1,24 @@
+main section.about
+{
+    background: url(/images/richmond-1200x768.jpg) #0b333f no-repeat 50% 0px fixed;
+    /*background: url(/images/lions_team.jpg) #0b333f no-repeat top center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 768px)
+{
+
+}
+
+
+.main-content .text
+{
+    /*position: relative;*/
+    /*top: 60px;*/
+    padding-top: 60px;
+    min-height: 620px;
+    background-color: rgba(38, 41, 46, .5);
+}

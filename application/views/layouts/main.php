@@ -22,6 +22,7 @@
 
 <body<?=$this->solidHeader ? ' class="solid-header"' : ''?>>
 <header>
+    <div class="header-padding"></div>
     <div class="header-bounds">
         <h1><?=CHtml::link('Richmond Lions', $this->createUrl('site/index'))?></h1>
 
@@ -52,10 +53,27 @@
                         </a>
                     </li>
                 </ul>
+
+                <button type="button" class="menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </nav>
         </div>
         <div class="clear"></div>
     </div>
+    <div class="header-padding"></div>
+
+    <nav class="mobile-nav">
+        <ul class="mobile-links">
+            <li><?=CHtml::link('Events', '/events')?></li>
+            <li><?=CHtml::link('Sponsors', '/sponsors')?></li>
+            <li><?=CHtml::link('Join', '/join')?></li>
+            <li><?=CHtml::link('About', '/about')?></li>
+        </ul>
+    </nav>
+
 </header>
 
 <main>
@@ -63,10 +81,5 @@
 </main>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/skrollr.min.js"></script>
-<script type="text/javascript">
-    var s = skrollr.init();
-</script>
-
 </body>
 </html>

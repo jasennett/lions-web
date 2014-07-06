@@ -3,15 +3,27 @@
 
 $this->pageTitle='Richmond Lions Rugby Club'
 ?>
-<!--<section id="slide-1" class="homeSlide">-->
-<!--    <div class="bcg">-->
-<!--        <div class="hsContainer">-->
-<!--            <div class="hsContent">-->
-<!--                <h2>Simple parallax scrolling is...</h2>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+
+<section class="first about">
+    <div class="content">
+        Located in historic Richmond, Virginia, USA, the Richmond Lions R.F.C. is the area's competitive Men's Rugby Club (Division II).
+        <br />
+        New members are always welcome.
+    </div>
+</section>
+
+<section class="events">
+    <div class="content">
+
+    </div>
+</section>
+
+<section class="first about">
+    <div class="content">
+
+    </div>
+</section>
+
 <div data-0="background-position: 50% -50px" data-600="background-position: 50% -200px" class="main-content">
 <div class="text">
 Here's some info.

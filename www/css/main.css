@@ -20,11 +20,17 @@ header
 .header-bounds
 {
     margin: auto;
+    padding: 0 5px;
     max-width: 940px;
-    height: 60px;
 }
 
-header a
+.header-padding
+{
+    width: 100%;
+    height: 10px;
+}
+
+header a, nav a
 {
     display: inline-block;
     text-decoration: none;
@@ -39,7 +45,7 @@ header a
     line-height: 1em;
 }
 
-header a:hover
+header a:hover, nav a:hover
 {
     color: #D2D2D2;
 }
@@ -47,14 +53,14 @@ header a:hover
 header h1
 {
     display: inline-block;
-    font-size: 30px;
-    margin: 10px 0;
+    margin: 0;
     padding: 0;
 }
 
 header h1 a
 {
     background: url('/images/lion_shield_small.png') no-repeat left center;
+    font-size: 30px;
     padding: 5px 0 5px 25px;
 }
 
@@ -72,13 +78,13 @@ nav ul
 
 nav .links
 {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 nav .social
 {
     vertical-align: top;
-    margin: 13px 0 13px 5px;
+    margin: 3px 0 3px 5px;
 }
 
 nav .links li a
@@ -143,6 +149,53 @@ nav .social li a:hover
     color: #38569C;
 }
 
+header button.menu
+{
+    display: none;
+    cursor: pointer;
+    padding: 8px 9px;
+    margin: 4px 0;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid rgba(220, 0, 0, 1);
+    border-radius: 3px;
+}
+
+header button.menu .icon-bar
+{
+    background-color: white;
+    display: block;
+    width: 20px;
+    height: 2px;
+}
+
+nav.mobile-nav
+{
+    display: none;
+}
+
+header button.menu .icon-bar+.icon-bar
+{
+    margin-top: 4px;
+}
+
+section .content
+{
+    background-color: transparent;
+    max-width: 940px;
+    margin: auto;
+}
+
+section.first .content
+{
+    padding-top: 60px;
+}
+
+.solid-header section.first .content
+{
+    padding-top: 0;
+}
+
 @media (max-width: 768px)
 {
     header
@@ -150,43 +203,73 @@ nav .social li a:hover
         background-color: rgba(252, 0, 0, 1);
     }
 
+    .header-padding
+    {
+        display: none;
+    }
 
-}
+    header h1 a
+    {
+        background-size: auto 28px;
+        font-size: 26px;
+        padding: 7px 0 7px 18px;
+    }
 
-main
-{
-    font-size: 20px;
-}
+    header button.menu
+    {
+        display: inline-block;
+    }
 
-.main-content
-{
-    color: white;
-    width: 100%;
-    background: url(/images/richmond-1200x768.jpg) #0b333f no-repeat 50% 0px fixed;
-    /*background: url(/images/lions_team.jpg) #0b333f no-repeat top center fixed;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    nav .links
+    {
+        display: none;
+    }
 
-    text-align:center;
-}
+    nav .social
+    {
+        margin: 6px 0 6px 5px;
+    }
 
-.main-content .text
-{
-    /*position: relative;*/
-    /*top: 60px;*/
-    padding-top: 60px;
-    min-height: 620px;
-    background-color: rgba(38, 41, 46, .5);
-}
+    nav .social li a
+    {
+        font-size: 28px;
+    }
 
-.solid-header .more-content .text
-{
-    padding-top: 0;
-}
+    .social .icon .filler
+    {
+        position: absolute;
+        top: 5px;
+        left: 6px;
+        width: 16px;
+        height: 20px;
+        background-color: white;
+        display: block;
+    }
 
-.more-content
-{
-    background-color: white;
+    nav.mobile-nav
+    {
+        display: block;
+    }
+
+    nav.mobile-nav .mobile-links
+    {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav.mobile-nav .mobile-links li
+    {
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        padding: 12px 0;
+        display: block;
+        border-top: 1px solid rgba(220, 0, 0, 1);
+        background-color: rgba(252, 0, 0, 1);
+    }
+
+    section.first .content
+    {
+        padding-top: 0;
+    }
 }

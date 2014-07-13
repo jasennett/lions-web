@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     var s = skrollr.init({
-//            forceHeight:false
+            forceHeight:false
         }
     );
     $("nav.mobile-nav").hide();

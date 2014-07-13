@@ -13,6 +13,7 @@
     <![endif]-->
 
     <link href='http://fonts.googleapis.com/css?family=Dosis:300,400|Lato:300,400|Open+Sans+Condensed:300|Open+Sans:400,300,700|Titillium+Web:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/grid.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/clearfix.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/icons.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
@@ -29,7 +30,7 @@
         <div class="right">
             <nav>
                 <ul class="links">
-                    <li><?=CHtml::link('Events', '/events')?></li>
+                    <li><?=CHtml::link('Events', '//facebook.com/RichmondLions/events')?></li>
                     <li><?=CHtml::link('Sponsors', '/sponsors')?></li>
                     <li><?=CHtml::link('Join', '/join')?></li>
                     <li><?=CHtml::link('About', '/about')?></li>
@@ -37,7 +38,7 @@
 
                 <ul class="social">
                     <li>
-                        <a href="http://facebook.com/RichmondLions">
+                        <a href="//facebook.com/RichmondLions">
                             <div class="icon">
                                 <span class="filler"></span>
                                 <span class="logo icon-facebook-circled"></span>
@@ -45,7 +46,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="http://twitter.com/RichmondRugby">
+                        <a href="//twitter.com/RichmondRugby">
                             <div class="icon">
                                 <span class="filler"></span>
                                 <span class="logo icon-twitter-circled"></span>
@@ -67,7 +68,7 @@
 
     <nav class="mobile-nav">
         <ul class="mobile-links">
-            <li><?=CHtml::link('Events', '/events')?></li>
+            <li><?=CHtml::link('Events', '//facebook.com/RichmondLions/events')?></li>
             <li><?=CHtml::link('Sponsors', '/sponsors')?></li>
             <li><?=CHtml::link('Join', '/join')?></li>
             <li><?=CHtml::link('About', '/about')?></li>

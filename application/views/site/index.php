@@ -4,7 +4,7 @@
 $this->pageTitle='Richmond Lions Rugby Club'
 ?>
 
-<section class="first about" data-top="background-position: 50% 0px" data-top-bottom="background-position: 50% -150px">
+<section class="first about" data-top="background-position: 50% 0px" data-top-bottom="background-position: 50% -200px">
     <div class="about-wrap">
         <div class="content">
             <nav>
@@ -29,11 +29,11 @@ $this->pageTitle='Richmond Lions Rugby Club'
                 <div class="clear"></div>
             </nav>
 
-            <div class="about-text" data-60-top-top="color: rgba(255,255,255,1)" data-0-top-bottom="color: rgba(255,255,255,0)">
-                <div class="history">
+            <div class="about-text">
+                <h2 class="history" data-anchor-target=".about-text" data-80-top-top="color: rgba(255,255,255,1)" data-0-top-bottom="color: rgba(255,255,255,0)">
                     Located in historic Richmond, Virginia, USA, the Richmond Lions R.F.C. is the area's competitive Men's Rugby Club (Division II).
-                </div>
-                <div class="new-members">
+                </h2>
+                <div class="new-members" data-anchor-target=".about-text" data-80-top-top="color: rgba(255,255,255,1)" data-0-top-bottom="color: rgba(255,255,255,0)">
                     New members are always welcome.
                 </div>
             </div>
@@ -43,12 +43,149 @@ $this->pageTitle='Richmond Lions Rugby Club'
 
 <section class="events">
     <div class="content">
-        Upcoming Events
+        <div class="gutter">
+            <div class="section-name">
+                <div class="icon">
+                    <span class="icon-calendar-empty"></span>
+                </div>
+                <h2>Upcoming Events</h2>
+            </div>
+            <div class="upcoming">
+                <div class="event">
+                    <a href="http://facebook.com">
+                        <div class="card">
+                            <div class="grid-9">
+                                <img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/t1.0-9/c137.0.160.160/p160x160/10300052_662348367174651_893665167052107325_n.jpg">
+                            </div>
+                            <div class="when">
+                                <p>
+                                    Saturday
+                                    <br />
+                                    July 12
+                                    <br/>
+                                    9:00 AM
+                                </p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="event-detail">
+                                <h3>Rocky Gorge "Slug 7s" MAC Qualifier</h3>
+                                <p>
+                                    6000 Cradlerock Way, Columbia, MD 21045
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="event middle">
+                    <a href="http://facebook.com">
+                        <div class="card">
+                            <div class="grid-9">
+                                <img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/t1.0-9/c137.0.160.160/p160x160/10300052_662348367174651_893665167052107325_n.jpg">
+                            </div>
+                            <div class="when">
+                                <p>
+                                    Tuesday
+                                    <br />
+                                    July 15
+                                    <br />
+                                    7:00 PM
+                                </p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="event-detail">
+                                <h3>7's training</h3>
+                                <p>
+                                    J.Sargeant Reynolds in Richmond, Virginia
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="event">
+                    <a href="http://facebook.com">
+                        <div class="card">
+                            <div class="grid-9">
+                                <img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/t1.0-9/c137.0.160.160/p160x160/10300052_662348367174651_893665167052107325_n.jpg">
+                            </div>
+                            <div class="when">
+                                <p>
+                                    Thursday
+                                    <br />
+                                    July 17
+                                    <br />
+                                    7:00 PM
+                                </p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="event-detail">
+                                <h3>7's training</h3>
+                                <p>
+                                    J.Sargeant Reynolds in Richmond, Virginia
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="section-link">
+                <?=CHtml::link('More Events', '//facebook.com/RichmondLions/events', array('class' => 'section-button'))?>
+            </div>
+        </div>
     </div>
 </section>
 
 <section class="sponsors">
     <div class="content">
-        Sponsors
+        <div class="gutter">
+            <div class="section-name">
+                <div class="icon">
+                    <span class="icon-money"></span>
+                </div>
+                <h2>Sponsors</h2>
+            </div>
+            <div class="sponsors-list">
+                <div class="sponsor">
+                    <div class="card">
+                        <div class="square">
+                            <div class="sponsor-logo">
+                                <img src="/images/sponsors/pbr_logo.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsor">
+                    <div class="card">
+                        <div class="square">
+                            <div class="sponsor-logo">
+                                <img src="/images/sponsors/gus_logo.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsor">
+                    <div class="card">
+                        <div class="square">
+                            <div class="sponsor-logo">
+                                <img src="/images/sponsors/advanced_logo.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsor">
+                    <div class="card">
+                        <div class="square">
+                            <div class="sponsor-logo">
+                                <img src="/images/sponsors/long_foster_logo.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="section-link">
+                <?=CHtml::link('Become a Sponsor', '#', array('class' => 'section-button'))?>
+            </div>
+        </div>
     </div>
 </section>

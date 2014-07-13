@@ -11,7 +11,7 @@ main section.about
 
 main section.about .about-wrap
 {
-    height: 400px;
+    min-height: 400px;
     background-color: rgba(38, 41, 46, .5);
 }
 
@@ -36,19 +36,231 @@ main section.about .about-text
 
 main section.about .history
 {
+    font-size: 24px;
+    line-height: 1em;
     margin-bottom: 20px;
 }
 
 main section.events
 {
-    color: white;
-    background-color: grey;
+    position: relative;
+    z-index: 100;
+    /*background-color: #2F3238;*/
+    /*background-color: rgba(233,233,233,.7);*/
+    background-color: #f0f0f0;
+    /*background-color: grey;*/
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,1);
+    box-shadow: 0 1px 5px rgba(0,0,0,1);
+}
+
+main section.events, main section.events .section-name h2, main section.events .event a
+{
+    color: black;
+    text-decoration: none;
+}
+
+main section.events .event .card h3
+{
+    text-align: center;
+    color: #f50c1c;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+main section.events .event .card .event-detail p
+{
+    margin-bottom: 10px;
+}
+
+main section.events .event .card .when, main section.events .event .card .event-detail p
+{
+    color: #808080;
+}
+
+main section.events .event .card .when
+{
+    font-size: 20px;
+    line-height: 1.2em;
+    float: right;
+    text-align: right;
+    padding: 12px 15px 0 0;
+}
+
+main section.events .event .card .event-detail
+{
+    margin-top: 10px;
+    min-height: 100px;
 }
 
 main section.sponsors
 {
-    color: black;
+    /*color: black;*/
+    /*background-color: #FFD600;*/
+    color: white;
+    /*background-color: #26292E;*/
+    /*background-color: #2F3238;*/
+    /*background-color: white;*/
+    background-color: grey;
+}
+
+main section .content .gutter
+{
+    padding: 15px 0;
+    margin: 0;
+}
+
+main section .content .section-name
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main section .content .section-name .icon
+{
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+main section .content .section-name h2
+{
+    font-size: 29px;
+    margin: 0;
+}
+
+main section.events .event
+{
+    float: left;
+    display: inline-block;
+    width: 33%;
+}
+
+main section.events .event .card
+{
+    margin: 10px 15px;
+    padding: 10px;
+}
+
+main section.sponsors .sponsor .card
+{
+    margin: 10px 15px;
+    padding: 10px;
+}
+
+main section .card
+{
+    border-radius: 1px;
     background-color: white;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    box-shadow: 0 1px 3px rgba(0,0,0,1);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+main section .card:hover
+{
+    -moz-box-shadow: 0 1px 8px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,1);
+    box-shadow: 0 1px 8px rgba(0,0,0,1);
+}
+
+main section .card img
+{
+    max-width:100%;
+    height: auto;
+}
+
+main section.events .event.middle
+{
+    width: 34%;
+}
+
+main section .section-link
+{
+    text-align: center;
+}
+
+main section .section-button
+{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 12px 22px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: rgba(230, 0, 0, 1);
+    color: white;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+main section .section-button:hover
+{
+    background-color: rgba(245, 0, 0, 1);
+}
+
+main section.sponsors .sponsor
+{
+    float: left;
+    display: inline-block;
+    width: 25%;
+}
+
+main section.sponsors .sponsor .card
+{
+    text-align: center;
+}
+
+main section.sponsors .sponsor .card .square
+{
+    max-width: 210px;
+    margin: auto;
+    position: relative;
+    width: 100%;		/* desired width */
+}
+
+main section.sponsors .sponsor .card .square:before{
+    content: "";
+    display: block;
+    padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+main section.sponsors .sponsor .card .sponsor-logo
+{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+main section.sponsors .sponsor .card .sponsor-logo img
+{
+    width: 100%;
+    position:  absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.pbr
+{
+    background: url('/images/sponsors/pbr_logo.png') center center no-repeat;
+
+}
+
+.advanced
+{
+    background: url('/images/sponsors/advanced_logo.png') center center no-repeat;
 }
 
 @media (min-width: 900px)
@@ -75,12 +287,12 @@ main section.sponsors
 
     main section.about .about-wrap
     {
-        height: 250px;
+        min-height: 300px;
     }
 
     main section.about .about-text
     {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1em;
         max-width: none;
         padding: 15px;
@@ -89,6 +301,45 @@ main section.sponsors
 
     main section.about .about-text .history
     {
-        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 1em;
+        margin-bottom: 15px;
+    }
+
+    main section .content .section-name .icon
+    {
+        margin-top: 5px;
+        font-size: 30px;
+    }
+
+    main section .content .section-name h2
+    {
+        font-size: 27px;
+    }
+
+    main section.events .event, main section.events .event.middle
+    {
+        width: 100%;
+    }
+
+    main section.sponsors .sponsor
+    {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px)
+{
+    main section.sponsors .sponsor
+    {
+        width: 100%;
+    }
+
+    main section.sponsors .sponsor .card
+    {
+        max-width: 240px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

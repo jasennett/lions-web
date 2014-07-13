@@ -41,7 +41,51 @@ $this->pageTitle='Richmond Lions Rugby Club'
     </div>
 </section>
 
-<section class="events">
+<section class="announcements light-grey">
+    <div class="content">
+        <div class="gutter">
+            <div class="section-name">
+                <div class="icon">
+                    <span class="icon-megaphone"></span>
+                </div>
+                <h2>Announcements</h2>
+            </div>
+            <div class="messages">
+                <div class="message">
+                    <a href="//facebook.com/RichmondLions/posts/678138838928937">
+                        <div class="card">
+                            <p class="text">
+                                Lions make it through group stages without giving up a point. Wins against WV warhounds, Nova II and Wilmington put our men into the knockout stages looking to bring home the cup at Slug Sevens in Columbia Maryland.
+                            </p>
+
+                            <div class="when">
+                                <p>July 12, 7:00 PM</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="message">
+                    <a href="//facebook.com/RichmondLions/posts/677755512300603">
+                        <div class="card">
+                            <p class="text">
+                                Up bright and early to travel to Maryland for some 7s rugby! Hopefully heading back to RVA later today with some hardware in hand ‪#‎RVARugby‬
+
+                            </p>
+                            <div class="when">
+                                <p>July 12, 6:00 AM</p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="events dark-grey">
     <div class="content">
         <div class="gutter">
             <div class="section-name">
@@ -135,7 +179,7 @@ $this->pageTitle='Richmond Lions Rugby Club'
     </div>
 </section>
 
-<section class="sponsors">
+<section class="sponsors light-grey">
     <div class="content">
         <div class="gutter">
             <div class="section-name">

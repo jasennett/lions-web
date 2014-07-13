@@ -7,9 +7,12 @@ $this->breadcrumbs=array(
 	'Error',
 );
 ?>
+<section class="first">
+    <div class="content">
+        <h2>Error <?php echo $code; ?></h2>
 
-<h2>Error <?php echo $code; ?></h2>
-
-<div class="error">
-<?php echo CHtml::encode($message); ?>
-</div>
+        <div class="error">
+            <?php echo CHtml::encode($message); ?>
+        </div>
+    </div>
+</section>

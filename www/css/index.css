@@ -41,22 +41,82 @@ main section.about .history
     margin-bottom: 20px;
 }
 
+main section.light-grey, main section.dark-grey
+{
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,1);
+    box-shadow: 0 0 6px rgba(0,0,0,1);
+}
+
+main section.announcements
+{
+    z-index: 50;
+}
+
+main section.announcements .message
+{
+    float: left;
+    width: 100%;
+}
+
+main section.announcements .message a
+{
+    text-decoration: none;
+}
+
+main section.announcements .message p
+{
+    margin: 0;
+}
+
+main section.announcements .message .card .text
+{
+    font-size: 22px;
+    color: black;
+}
+
+main section.announcements .message .card .when
+{
+    font-size: 14px;
+    color: grey;
+    display: inline-block;
+    float: right;
+    padding: 5px;
+}
+
 main section.events
 {
     position: relative;
     z-index: 100;
-    /*background-color: #2F3238;*/
-    /*background-color: rgba(233,233,233,.7);*/
-    background-color: #f0f0f0;
-    /*background-color: grey;*/
-    -moz-box-shadow: 0 1px 5px rgba(0,0,0,1);
-    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,1);
-    box-shadow: 0 1px 5px rgba(0,0,0,1);
 }
 
-main section.events, main section.events .section-name h2, main section.events .event a
+main section.sponsors
+{
+    z-index: 25;
+}
+
+main section.light-grey, main section.light-grey .content h2
 {
     color: black;
+}
+
+main section.light-grey
+{
+    background-color: #f0f0f0;
+}
+
+main section.dark-grey, main section.dark-grey .content h2
+{
+    color: white;
+}
+
+main section.dark-grey
+{
+    background-color: grey;
+}
+
+main section.events .event a
+{
     text-decoration: none;
 }
 
@@ -93,17 +153,6 @@ main section.events .event .card .event-detail
     min-height: 100px;
 }
 
-main section.sponsors
-{
-    /*color: black;*/
-    /*background-color: #FFD600;*/
-    color: white;
-    /*background-color: #26292E;*/
-    /*background-color: #2F3238;*/
-    /*background-color: white;*/
-    background-color: grey;
-}
-
 main section .content .gutter
 {
     padding: 15px 0;
@@ -135,13 +184,7 @@ main section.events .event
     width: 33%;
 }
 
-main section.events .event .card
-{
-    margin: 10px 15px;
-    padding: 10px;
-}
-
-main section.sponsors .sponsor .card
+main section .card
 {
     margin: 10px 15px;
     padding: 10px;
@@ -165,6 +208,20 @@ main section .card:hover
     -moz-box-shadow: 0 1px 8px rgba(0,0,0,1);
     -webkit-box-shadow: 0 1px 8px rgba(0,0,0,1);
     box-shadow: 0 1px 8px rgba(0,0,0,1);
+}
+
+main section.dark-grey .card
+{
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,1);
+    box-shadow: 0 1px 5px rgba(0,0,0,1);
+}
+
+main section.dark-grey .card:hover
+{
+    -moz-box-shadow: 0 1px 10px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,1);
+    box-shadow: 0 1px 10px rgba(0,0,0,1);
 }
 
 main section .card img
@@ -250,17 +307,6 @@ main section.sponsors .sponsor .card .sponsor-logo img
     left: 0;
     bottom: 0;
     right: 0;
-}
-
-.pbr
-{
-    background: url('/images/sponsors/pbr_logo.png') center center no-repeat;
-
-}
-
-.advanced
-{
-    background: url('/images/sponsors/advanced_logo.png') center center no-repeat;
 }
 
 @media (min-width: 900px)

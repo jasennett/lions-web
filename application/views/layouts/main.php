@@ -15,7 +15,7 @@
     <link href='http://fonts.googleapis.com/css?family=Dosis:300,400|Lato:300,400|Open+Sans+Condensed:300|Open+Sans:400,300,700|Titillium+Web:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/grid.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/clearfix.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/lions-icons.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>

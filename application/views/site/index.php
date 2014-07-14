@@ -228,7 +228,7 @@ $this->pageTitle='Richmond Lions Rugby Club'
                 <div class="clear"></div>
             </div>
             <div class="section-link">
-                <?=CHtml::link('Become a Sponsor', '#', array('class' => 'section-button'))?>
+                <?=CHtml::link('Become a Sponsor', 'mailto:fundraising@richmondlions.com', array('class' => 'section-button'))?>
             </div>
         </div>
     </div>

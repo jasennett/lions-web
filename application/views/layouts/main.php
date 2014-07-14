@@ -31,7 +31,7 @@
             <nav>
                 <ul class="links">
                     <li><?=CHtml::link('Events', '//facebook.com/RichmondLions/events')?></li>
-                    <li><?=CHtml::link('Sponsors', '/sponsors')?></li>
+                    <li><?=CHtml::link('Sponsors', $this->createUrl('site/sponsors'))?></li>
                     <li><?=CHtml::link('Join', '/join')?></li>
                     <li><?=CHtml::link('About', '/about')?></li>
                 </ul>
@@ -69,7 +69,7 @@
     <nav class="mobile-nav">
         <ul class="mobile-links">
             <li><?=CHtml::link('Events', '//facebook.com/RichmondLions/events')?></li>
-            <li><?=CHtml::link('Sponsors', '/sponsors')?></li>
+            <li><?=CHtml::link('Sponsors', $this->createUrl('site/sponsors'))?></li>
             <li><?=CHtml::link('Join', '/join')?></li>
             <li><?=CHtml::link('About', '/about')?></li>
         </ul>

@@ -1,0 +1,204 @@
+main section.first .gutter
+{
+    padding: 25px 10px;
+}
+
+main section.first h2
+{
+    font-size: 32px;
+    line-height: 1em;
+    text-align: center;
+}
+
+main section.first p
+{
+    margin: 0;
+}
+
+main section.cover
+{
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+main section.dark h3
+{
+    color: white;
+}
+
+main section.light h3
+{
+    color: black;
+}
+
+main section h3
+{
+    font-size: 38px;
+    line-height: 1.0em;
+    font-weight: 300;
+    display: inline-block;
+    margin: auto;
+}
+
+main section .card
+{
+    display: inline-block;
+    text-align: center;
+    margin: 15px 15px;
+    padding: 10px;
+
+    border-radius: 1px;
+    background-color: white;
+
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+main section.light .card
+{
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    box-shadow: 0 1px 3px rgba(0,0,0,1);
+}
+
+main section.light .card:hover
+{
+    -moz-box-shadow: 0 1px 8px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,1);
+    box-shadow: 0 1px 8px rgba(0,0,0,1);
+}
+
+main section.dark .card
+{
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,1);
+    box-shadow: 0 1px 5px rgba(0,0,0,1);
+}
+
+main section.dark .card:hover
+{
+    -moz-box-shadow: 0 1px 10px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,1);
+    box-shadow: 0 1px 10px rgba(0,0,0,1);
+}
+
+main section .card .square
+{
+    margin: auto;
+    position: relative;
+    width: 210px;		/* desired width */
+}
+
+main section .card .square:before{
+    content: "";
+    display: block;
+    padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+main section .card .sponsor-logo
+{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+main section .card .sponsor-logo img
+{
+    height: auto;
+    width: 100%;
+    position:  absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+main section.pbr
+{
+    background-image: url('/images/sponsors/pbr_wide.jpg');
+}
+
+main section.gus
+{
+    background-image: url('/images/sponsors/gus_wide.png');
+}
+
+main section.advanced
+{
+    background-image: url('/images/sponsors/advanced_wide_2.png');
+}
+
+main section .text-container h3
+{
+    padding: 20px;
+}
+
+main section .text-container, main section .card-container
+{
+    display: inline-block;
+}
+
+main section.pbr .text-container, main section.gus .card-container,
+main section.advanced .text-container, main section.long-foster .card-container
+{
+    float: left;
+}
+
+main section.pbr .card-container, main section.gus .text-container,
+main section.advanced .card-container, main section.long-foster .text-container
+{
+    float: right;
+}
+
+main section .text-container
+{
+    max-width: 430px;
+}
+
+main section.dark .shade
+{
+    background-color: rgba(38, 41, 46, .5);
+}
+
+main section.light .shade
+{
+    background-color: rgba(255, 255, 255, .5);
+}
+
+@media (min-width: 1024px)
+{
+    main section.gus .card
+    {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 729px)
+{
+    main section.long-foster .text-container, main section.long-foster .card-container
+    {
+        float: none;
+        width: 100%;
+        max-width: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 549px)
+{
+    main section .text-container, main section .card-container
+    {
+        float: none;
+        width: 100%;
+        max-width: none;
+        text-align: center;
+    }
+}

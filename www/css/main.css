@@ -179,6 +179,26 @@ header button.menu .icon-bar+.icon-bar
     margin-top: 4px;
 }
 
+main section.light-grey, main section.light-grey .content h2
+{
+    color: black;
+}
+
+main section.light-grey
+{
+    background-color: #f0f0f0;
+}
+
+main section.dark-grey, main section.dark-grey .content h2
+{
+    color: white;
+}
+
+main section.dark-grey
+{
+    background-color: grey;
+}
+
 main section .content
 {
     background-color: transparent;

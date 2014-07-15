@@ -222,6 +222,39 @@ main section.first .content
     padding-top: 60px;
 }
 
+main section.cover
+{
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+main section.dark,
+main section.dark h2,
+main section.dark h3
+{
+    color: white;
+}
+
+main section.light,
+main section.light h2,
+main section.light h3
+{
+    color: black;
+}
+
+main section.dark .shade
+{
+    background-color: rgba(38, 41, 46, .5);
+}
+
+main section.light .shade
+{
+    background-color: rgba(255, 255, 255, .5);
+}
+
 @media (max-width: 767px)
 {
     header

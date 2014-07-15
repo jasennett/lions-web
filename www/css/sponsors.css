@@ -1,6 +1,6 @@
 main section.first .gutter
 {
-    padding: 25px 10px;
+    padding: 75px 10px;
 }
 
 main section.first h2
@@ -13,25 +13,6 @@ main section.first h2
 main section.first p
 {
     margin: 0;
-}
-
-main section.cover
-{
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
-}
-
-main section.dark h3
-{
-    color: white;
-}
-
-main section.light h3
-{
-    color: black;
 }
 
 main section h3
@@ -163,16 +144,6 @@ main section .text-container
     max-width: 430px;
 }
 
-main section.dark .shade
-{
-    background-color: rgba(38, 41, 46, .5);
-}
-
-main section.light .shade
-{
-    background-color: rgba(255, 255, 255, .5);
-}
-
 @media (min-width: 1024px)
 {
     main section.gus .card
@@ -194,6 +165,11 @@ main section.light .shade
 
 @media (max-width: 549px)
 {
+    main section.first .gutter
+    {
+        padding: 45px 10px;
+    }
+
     main section .text-container, main section .card-container
     {
         float: none;

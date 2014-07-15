@@ -33,7 +33,7 @@ class SiteController extends Controller
         Yii::app()->clientScript->registerCSSFile('/css/index.css');
         Yii::app()->clientScript->registerScriptFile('/js/skrollr.min.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile('/js/main.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerScriptFile('/js/index.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/js/initskrollr.js', CClientScript::POS_END);
 		$this->render('index');
 	}
 
@@ -43,6 +43,16 @@ class SiteController extends Controller
         Yii::app()->clientScript->registerCSSFile('/css/sponsors.css');
         Yii::app()->clientScript->registerScriptFile('/js/main.js', CClientScript::POS_END);
         $this->render('sponsors');
+    }
+
+    public function actionAbout()
+    {
+        $this->layout = 'main';
+        Yii::app()->clientScript->registerCSSFile('/css/about.css');
+        Yii::app()->clientScript->registerScriptFile('/js/skrollr.min.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/js/main.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/js/initskrollr.js', CClientScript::POS_END);
+        $this->render('about');
     }
 
 	/**

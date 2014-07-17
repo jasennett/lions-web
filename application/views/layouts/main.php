@@ -81,6 +81,16 @@
     <?php echo $content; ?>
 </main>
 
+<footer>
+    <div>
+        <strong>Richmond Lions Rugby Football Club</strong>
+        <br />
+        <span class="address">PO Box 11571</span><span class="city-state">Richmond, VA 23230</span>
+        <br />
+        email: <a href="mailto:info@richmondlions.com">info@richmondlions.com</a>
+    </div>
+</footer>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </body>
 </html>

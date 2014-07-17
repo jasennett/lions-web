@@ -13,6 +13,7 @@ main section.first h2
 main section.first p
 {
     margin: 0;
+    text-align: center;
 }
 
 main section.first a

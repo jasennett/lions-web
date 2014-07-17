@@ -45,6 +45,36 @@ class SiteController extends Controller
         $this->render('sponsors');
     }
 
+    public function actionJoin()
+    {
+        $this->layout = 'main';
+        Yii::app()->clientScript->registerCSSFile('/css/join.css');
+        Yii::app()->clientScript->registerScriptFile('/js/skrollr.min.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/js/main.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/js/initskrollr.js', CClientScript::POS_END);
+
+        $model = new NewPlayerForm();
+        if(isset($_POST['NewPlayerForm']))
+        {
+            $model->attributes=$_POST['NewPlayerForm'];
+            if($model->validate())
+            {
+                $name='=?UTF-8?B?'.base64_encode($model->name).'?=';
+                $subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
+                $headers="From: $name <{$model->email}>\r\n".
+                    "Reply-To: {$model->email}\r\n".
+                    "MIME-Version: 1.0\r\n".
+                    "Content-Type: text/plain; charset=UTF-8";
+
+                mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
+                Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+                $this->refresh();
+            }
+        }
+
+        $this->render('join', array('model'=>$model));
+    }
+
     public function actionAbout()
     {
         $this->layout = 'main';

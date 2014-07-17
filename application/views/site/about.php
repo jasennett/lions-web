@@ -4,10 +4,10 @@
 $this->pageTitle='About Richmond Lions Rugby Club'
 ?>
 
-<section class="first cover dark history" data-top="background-position: 50% -125px" data-top-bottom="background-position: 50% -225px">
+<section class="first cover dark history" data-top="background-position: 50% -125px" data-top-bottom="background-position: 50% -275px">
     <div class="shade">
         <div class="content">
-            <div class="gutter fade-anchor">
+            <div class="gutter">
                 <h2 data-anchor-target=".fade-anchor" data-80-top-top="color: rgba(255,255,255,1)" data-0-top-bottom="color: rgba(255,255,255,0)">
                     About the Richmond Lions
                 </h2>
@@ -18,7 +18,7 @@ $this->pageTitle='About Richmond Lions Rugby Club'
                     <p>
                         In 1995 the two clubs merged to form Richmond United. Moving forward towards the goal of gaining more recognition and establishing a brand, in 2004 United became known as the Richmond Lions.
                     </p>
-                    <p>
+                    <p class="fade-anchor">
                         For a more in-depth look of our rich rugby history and tradition, visit the <a href="http://sites.google.com/site/richmondrugbyfoundation/history/richmond-rfc">Complete Club History</a> maintained by Cary Kennedy & Liam Riley.
                     </p>
                 </div>
@@ -27,7 +27,7 @@ $this->pageTitle='About Richmond Lions Rugby Club'
     </div>
 </section>
 
-<section class="light-grey officers">
+<section class="light light-grey officers">
     <div class="content">
         <div class="gutter">
             <h2>Club Officers</h2>

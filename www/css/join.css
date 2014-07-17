@@ -1,0 +1,206 @@
+main section .content .gutter
+{
+    padding: 25px 10px;
+}
+
+main section .content h2
+{
+    font-size: 26px;
+    line-height: 1em;
+    margin-bottom: 27px;
+}
+
+main section .content .pad-text
+{
+    padding: 0 5px;
+    font-size: 18px;
+    line-height: 1em;
+}
+
+main section .content a
+{
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+main section.how-to-join
+{
+    background: url('/images/mv_2014.jpg') no-repeat 50% 0px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+main section.dark.how-to-join .shade
+{
+    background-color: rgba(38, 41, 46, .65);
+}
+
+main section.how-to-join .content
+{
+    min-height: 400px;
+}
+
+main section.how-to-join p
+{
+    margin-bottom: 25px;
+}
+
+main section.how-to-join p.continued
+{
+    margin-bottom: 5px;
+}
+
+main section.how-to-join .content p strong
+{
+    font-weight: 300;
+}
+
+main section.how-to-join .content a
+{
+    text-decoration: none;
+    color: #f41c19;
+}
+
+main section.how-to-join .content a:hover
+{
+    color: #D2D2D2;
+}
+
+main section.new-player .anchor-wrapper
+{
+    position: relative;
+}
+
+main section.new-player .anchor-wrapper a
+{
+    position: absolute;
+    top: -60px;
+}
+
+main section.new-player h2
+{
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+main section.new-player .pad-text p
+{
+    margin-bottom: 12px;
+}
+
+main section.new-player form .row
+{
+    padding: 10px 0;
+
+}
+
+main section.new-player form .row label
+{
+    display: inline-block;
+    padding: 2px 0;
+    font-weight: 400;
+}
+
+main section.new-player form .errorMessage
+{
+    display: block;
+    padding: 2px 0;
+}
+
+main section.new-player form .errorMessage,
+main section.new-player form .error-summary
+{
+    color: #f41c19;
+}
+
+main section.new-player form input[type="text"],
+main section.new-player form textarea
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1em;
+}
+
+main section.new-player form .sublabel
+{
+    font-size: 16px;
+    margin-top: 3px;
+    color: #808080;
+    font-weight: 300;
+}
+
+main section.new-player form .answers label
+{
+    float: left;
+    font-weight: 300;
+}
+
+main section.new-player form .row.inline label
+{
+    width: 50px;
+}
+
+main section.new-player form .row.inline input
+{
+    width: 250px;
+}
+
+main section.new-player form label.textarea-label
+{
+    display: block;
+}
+
+main section.new-player form input[type="submit"]
+{
+    border: none;
+    border-radius: 3px;
+    padding: 12px 22px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    background-color: rgba(230, 0, 0, 1);
+    color: white;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+main section.new-player form input[type="submit"]:hover
+{
+    background-color: rgba(245, 0, 0, 1);
+}
+
+@media (max-width: 767px)
+{
+    main section.new-player .anchor-wrapper a
+    {
+        position: absolute;
+        top: -40px;
+    }
+
+    main section.new-player form .row.inline input,
+    main section.new-player form input[type="text"],
+    main section.new-player form textarea
+    {
+        width: 100%;
+    }
+
+    main section.new-player form .answers label
+    {
+        display: block;
+        float: none;
+        margin: 5px;
+    }
+
+    main section.new-player form input[type="submit"]
+    {
+        width: 100%;
+    }
+}

@@ -15,6 +15,21 @@ main section.first p
     margin: 0;
 }
 
+main section.first a
+{
+    color: #eb1b18;
+
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+main section.first a:hover
+{
+    color: #ff1d1a;
+}
+
 main section h3
 {
     font-size: 38px;

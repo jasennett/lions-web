@@ -1,7 +1,7 @@
 main section.about
 {
     color: white;
-    background: url(/images/richmond-1200x768.jpg) #0b333f no-repeat 50% 0 fixed;
+    background: url(/images/richmond-1200x768.jpg) #0b333f no-repeat 50% 0;
     /*background: url(/images/lions_team.jpg) #0b333f no-repeat 50% 0px fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -34,6 +34,7 @@ main section.about .about-text
 
 main section.about .history
 {
+    color: white;
     font-size: 24px;
     line-height: 1em;
     margin-bottom: 20px;

@@ -4,7 +4,7 @@
 $this->pageTitle='Richmond Lions Rugby Club'
 ?>
 
-<section class="first about" data-top="background-position: 50% 0px" data-top-bottom="background-position: 50% -200px">
+<section class="first about fixed" data-top="background-position: 50% 0px" data-top-bottom="background-position: 50% 200px">
     <div class="about-wrap">
         <div class="content">
             <nav>

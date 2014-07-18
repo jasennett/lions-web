@@ -5,7 +5,7 @@
 $this->pageTitle='Join Richmond Lions Rugby Club'
 ?>
 
-<section class="first cover dark how-to-join" data-top="background-position: 50% 0px" data-top-bottom="background-position: 50% -200px">
+<section class="first cover dark how-to-join fixed" data-top="background-position: 50% 0px" data-top-bottom="background-position: 50% 200px">
     <div class="shade">
         <div class="content">
             <div class="gutter">

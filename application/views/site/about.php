@@ -4,7 +4,7 @@
 $this->pageTitle='About Richmond Lions Rugby Club'
 ?>
 
-<section class="first cover dark history" data-top="background-position: 50% -125px" data-top-bottom="background-position: 50% -275px">
+<section class="first cover dark history fixed" data-top="background-position: 50% -125px" data-top-bottom="background-position: 50% 25px">
     <div class="shade">
         <div class="content">
             <div class="gutter">

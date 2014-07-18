@@ -27,7 +27,7 @@ main section .content a
 
 main section.history
 {
-    background: url('/images/1968_lions.jpg') no-repeat 50% -125px fixed;
+    background: url('/images/1968_lions.jpg') no-repeat 50% -125px;
 }
 
 main section.dark.history .shade

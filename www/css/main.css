@@ -22,6 +22,16 @@ header
     background-color: rgba(252, 0, 0, 1);
 }
 
+.skrollr #skrollr-body .fixed
+{
+    background-attachment: scroll;
+}
+
+.no-skrollr #skrollr-body .fixed
+{
+    background-attachment: fixed;
+}
+
 .header-bounds, footer div
 {
     margin: auto;

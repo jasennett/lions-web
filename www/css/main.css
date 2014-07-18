@@ -348,10 +348,10 @@ footer div a:hover
     nav .social .icon .filler
     {
         position: absolute;
-        top: 5px;
+        top: 3px;
         left: 6px;
         width: 16px;
-        height: 20px;
+        height: 16px;
         background-color: white;
         display: block;
     }

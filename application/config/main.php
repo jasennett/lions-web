@@ -1,5 +1,5 @@
 <?php
-
+require_once(__DIR__ . '/settings.php');
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 

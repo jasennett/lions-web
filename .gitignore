@@ -1,3 +1,4 @@
+application/config/secret.php
 www/assets/
 application/runtime/
 www/themes/classic/views/

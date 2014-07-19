@@ -361,6 +361,11 @@ footer div a:hover
         display: block;
     }
 
+    nav.mobile-nav.hidden
+    {
+        display: none;
+    }
+
     nav.mobile-nav .mobile-links
     {
         margin: 0;

@@ -67,7 +67,7 @@
     </div>
     <div class="header-padding"></div>
 
-    <nav class="mobile-nav">
+    <nav class="mobile-nav hidden">
         <ul class="mobile-links">
             <li><?=CHtml::link('Events', '//facebook.com/RichmondLions/events')?></li>
             <li><?=CHtml::link('Sponsors', $this->createUrl('site/sponsors'))?></li>

@@ -65,7 +65,8 @@ main section.how-to-join .content a
     color: #f41c19;
 }
 
-main section.how-to-join .content a:hover
+main section.how-to-join .content a:hover,
+main section.how-to-join .content a:active
 {
     color: #D2D2D2;
 }

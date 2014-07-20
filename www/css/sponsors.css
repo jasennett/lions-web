@@ -26,7 +26,8 @@ main section.first a
     transition: color 0.3s;
 }
 
-main section.first a:hover
+main section.first a:hover,
+main section.first a:active
 {
     color: #ff1d1a;
 }

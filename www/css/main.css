@@ -60,7 +60,8 @@ header a, nav a
     line-height: 1em;
 }
 
-header a:hover, nav a:hover
+header a:hover, nav a:hover,
+header a:active, nav a:active
 {
     color: #D2D2D2;
 }
@@ -301,7 +302,8 @@ footer div a
     transition: color 0.3s;
 }
 
-footer div a:hover
+footer div a:hover,
+footer div a:active
 {
     color: #D2D2D2;
 }

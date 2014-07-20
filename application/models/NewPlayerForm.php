@@ -45,4 +45,22 @@ class NewPlayerForm extends CFormModel
             'comments'=>'Additional Comments'
         );
     }
+
+    public function emailResults()
+    {
+        $name='=?UTF-8?B?'.base64_encode($this->name).'?=';
+        $subject='=?UTF-8?B?'.base64_encode('New Player Form Submission').'?=';
+        $headers="From: $name <{$this->email}>\r\n".
+            "Reply-To: {$this->email}\r\n".
+            "MIME-Version: 1.0\r\n".
+            "Content-Type: text/plain; charset=UTF-8";
+
+        $content = "Name:\n$this->name\n\n";
+        $content .= "Email:\n$this->email\n\n";
+        $content .= "Expectations:\n".static::$expectationsValues[$this->expectations]."\n\n";
+        $content .= "Experience:\n$this->experience\n\n";
+        $content .= "Additional Comments:\n$this->comments";
+
+        mail(Yii::app()->params['adminEmail'],$subject,$content,$headers);
+    }
 } 

@@ -59,20 +59,7 @@ class SiteController extends Controller
             $model->attributes=$_POST['NewPlayerForm'];
             if($model->validate())
             {
-                $name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-                $subject='=?UTF-8?B?'.base64_encode('New Player Form Submission').'?=';
-                $headers="From: $name <{$model->email}>\r\n".
-                    "Reply-To: {$model->email}\r\n".
-                    "MIME-Version: 1.0\r\n".
-                    "Content-Type: text/plain; charset=UTF-8";
-
-                $content = "Name:\n$model->name\n\n";
-                $content .= "Email:\n$model->email\n\n";
-                $content .= "Expectations:\n".NewPlayerForm::$expectationsValues[$model->expectations]."\n\n";
-                $content .= "Experience:\n$model->experience\n\n";
-                $content .= "Additional Comments:\n$model->comments";
-                
-                mail(Yii::app()->params['adminEmail'],$subject,$content,$headers);
+                $model->emailResults();
 
                 Yii::app()->clientScript->registerCSSFile('/css/sponsors.css');
                 $this->render('newPlayerThanks');
@@ -92,6 +79,13 @@ class SiteController extends Controller
         Yii::app()->clientScript->registerScriptFile('/js/main.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile('/js/initskrollr.js', CClientScript::POS_END);
         $this->render('about');
+    }
+
+    public function actionFbtest()
+    {
+        header("Content-Type: application/json");
+        echo '{"result":"hello"}';
+        exit;
     }
 
 	/**

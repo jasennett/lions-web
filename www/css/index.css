@@ -68,6 +68,26 @@ main section.announcements .message p
     margin: 0;
 }
 
+main section.announcements .message .card a
+{
+    color: #da1b18;
+    webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+main section.announcements .message .card a:hover,
+main section.announcements .message .card a:active
+{
+    color: #f41c19;
+}
+
+main section.announcements .message .card .text a
+{
+    text-decoration: underline;
+}
+
 main section.announcements .message .card .text
 {
     font-size: 22px;
@@ -188,6 +208,13 @@ main section .card:hover
     -moz-box-shadow: 0 1px 8px rgba(0,0,0,1);
     -webkit-box-shadow: 0 1px 8px rgba(0,0,0,1);
     box-shadow: 0 1px 8px rgba(0,0,0,1);
+}
+
+main section.announcements .card:hover
+{
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,1);
+    box-shadow: 0 1px 3px rgba(0,0,0,1);
 }
 
 main section.dark-grey .card

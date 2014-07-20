@@ -36,7 +36,7 @@ main section.how-to-join
 
 main section.dark.how-to-join .shade
 {
-    background-color: rgba(38, 41, 46, .65);
+    background-color: rgba(38, 41, 46, .70);
 }
 
 main section.how-to-join .content
@@ -62,13 +62,14 @@ main section.how-to-join .content p strong
 main section.how-to-join .content a
 {
     text-decoration: none;
-    color: #f41c19;
+    color: #da1b18;
 }
 
 main section.how-to-join .content a:hover,
 main section.how-to-join .content a:active
 {
-    color: #D2D2D2;
+    /*color: #D2D2D2;*/
+    color: #f41c19;
 }
 
 main section.new-player .anchor-wrapper

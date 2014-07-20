@@ -53,13 +53,14 @@ main section.history p.continued
 main section.history .content a
 {
     text-decoration: none;
-    color: #f41c19;
+    color: #da1b18;
 }
 
 main section.history .content a:hover,
 main section.history .content a:active
 {
-    color: #D2D2D2;
+    /*color: #D2D2D2;*/
+    color: #f41c19;
 }
 
 main section.officers h2
@@ -97,13 +98,13 @@ main section.officers .officer h3
 
 main section.officers .officer a
 {
-    color: #eb1b18;
+    color: #da1b18;
 }
 
 main section.officers .officer a:hover,
 main section.officers .officer a:active
 {
-    color: #ff1d1a;
+    color: #f41c19;
 }
 
 @media (max-width: 530px)

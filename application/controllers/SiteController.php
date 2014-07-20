@@ -51,7 +51,7 @@ class SiteController extends Controller
 
         Yii::app()->clientScript->registerScriptFile('/js/skrollr.min.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile('/js/main.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerScriptFile('/js/initskrollr.js', CClientScript::POS_END);
+//        Yii::app()->clientScript->registerScriptFile('/js/initskrollr.js', CClientScript::POS_END);
 
         $model = new NewPlayerForm();
         if(isset($_POST['NewPlayerForm']))

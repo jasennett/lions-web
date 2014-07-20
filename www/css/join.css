@@ -27,7 +27,7 @@ main section .content a
 
 main section.how-to-join
 {
-    background: url('/images/mv_2014.jpg') no-repeat 50% 0px;
+    background: url('/images/mv_2014.jpg') no-repeat 50% -35px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

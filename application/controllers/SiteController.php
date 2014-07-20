@@ -83,8 +83,12 @@ class SiteController extends Controller
 
     public function actionFbtest()
     {
-        header("Content-Type: application/json");
-        echo '{"result":"hello"}';
+        Yii::import('application.lib.facebook.request.post.PostsCollectionGet');
+        echo '<pre>';
+        $request = new PostsCollectionGet();
+        $response = $request->get();
+        print_r($response);
+        echo '</pre>';
         exit;
     }
 

@@ -26,7 +26,9 @@ class NewPlayerForm extends CFormModel
             // name, email, subject and body are required
             array('name, email, expectations', 'required'),
             // email has to be a valid email address
-            array('email', 'email')
+            array('email', 'email'),
+            // experience, comments are not required but should be assigned from the POST
+            array('experience, comments', 'safe')
         );
     }
 

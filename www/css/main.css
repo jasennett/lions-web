@@ -70,6 +70,7 @@ header h1
     display: inline-block;
     margin: 0;
     padding: 0;
+    float: left;
 }
 
 header h1 a

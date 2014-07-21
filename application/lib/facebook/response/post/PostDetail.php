@@ -14,6 +14,9 @@ class PostDetail extends DetailBase
     /** @var string */
     public $type;
 
-    /** @var LikeCollection */
+    /** @var string */
+    public $updated_time;
+
+    /** @var LikesCollection */
     public $likes;
 }

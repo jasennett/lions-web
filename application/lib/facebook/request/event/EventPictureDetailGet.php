@@ -1,9 +1,13 @@
 <?php
+Yii::import('application.lib.facebook.request.RequestBase');
 
 class EventPictureDetailGet extends RequestBase
 {
     /** @var string */
     public $id;
+
+    /** @var string */
+    public $size = 'normal';
 
     /**
      * @return EventPictureDetail
@@ -20,6 +24,6 @@ class EventPictureDetailGet extends RequestBase
 
     public function getQueryStringParams()
     {
-        return array('redirect' => 'false');
+        return array('redirect' => 'false', 'type' => $this->size);
     }
 }

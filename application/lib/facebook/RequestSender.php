@@ -31,7 +31,7 @@ class RequestSender
             $params['access_token'] = FacebookSettings::$APP_ID . '|' . FacebookSettings::$APP_SECRET;
         }
 
-        $first = True;
+        $first = true;
         foreach ($params as $key=>$value)
         {
             $uri .= $first ? '?' : '&';

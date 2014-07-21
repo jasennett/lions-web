@@ -1,5 +1,7 @@
 <?php
 /* @var $this SiteController */
+/* @var $announcements AnnouncementsModel */
+/* @var $events UpcomingEventsModel */
 
 $this->pageTitle='Richmond Lions Rugby Club'
 ?>
@@ -51,34 +53,29 @@ $this->pageTitle='Richmond Lions Rugby Club'
                 <h2>Announcements</h2>
             </div>
             <div class="messages">
-                <div class="message">
-                    <a href="//facebook.com/RichmondLions/posts/678138838928937">
-                        <div class="card">
-                            <p class="text">
-                                Lions make it through group stages without giving up a point. Wins against WV warhounds, Nova II and Wilmington put our men into the knockout stages looking to bring home the cup at Slug Sevens in Columbia Maryland.
-                            </p>
+                <?php if(empty($announcements->announcements)): ?>
+                    <p>No announcements copy.</p>
+                <?php else: ?>
+                    <?php foreach($announcements->announcements as $announcement): ?>
+                        <div class="message">
+                            <div class="card">
+                                <p class="text">
+                                    <?php echo $announcement->getFormattedMessage(); ?>
+                                </p>
 
-                            <div class="when">
-                                <p>July 12, 7:00 PM</p>
+                                <div class="when">
+                                    <p>
+                                        <a href="<?php echo $announcement->getPostUrl(); ?>">
+                                            <?php echo $announcement->getFormattedDate(); ?>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="clear"></div>
                             </div>
-                            <div class="clear"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="message">
-                    <a href="//facebook.com/RichmondLions/posts/677755512300603">
-                        <div class="card">
-                            <p class="text">
-                                Up bright and early to travel to Maryland for some 7s rugby! Hopefully heading back to RVA later today with some hardware in hand ‪#‎RVARugby‬
 
-                            </p>
-                            <div class="when">
-                                <p>July 12, 6:00 AM</p>
-                            </div>
-                            <div class="clear"></div>
                         </div>
-                    </a>
-                </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
                 <div class="clear"></div>
             </div>
         </div>
@@ -95,81 +92,33 @@ $this->pageTitle='Richmond Lions Rugby Club'
                 <h2>Upcoming Events</h2>
             </div>
             <div class="upcoming">
-                <div class="event">
-                    <a href="http://facebook.com">
-                        <div class="card">
-                            <div class="grid-9">
-                                <img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/t1.0-9/c137.0.160.160/p160x160/10300052_662348367174651_893665167052107325_n.jpg">
-                            </div>
-                            <div class="when">
-                                <p>
-                                    Saturday
-                                    <br />
-                                    July 12
-                                    <br/>
-                                    9:00 AM
-                                </p>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="event-detail">
-                                <h3>Rocky Gorge "Slug 7s" MAC Qualifier</h3>
-                                <p>
-                                    6000 Cradlerock Way, Columbia, MD 21045
-                                </p>
-                            </div>
+                <?php if(empty($events->events)): ?>
+                    <p>No events copy.</p>
+                <?php else: ?>
+                    <?php foreach($events->events as $i=>$event): ?>
+                        <div class="event<?php echo $i == 1 ? ' middle' : ''; ?>">
+                            <a href="<?php echo $event->getEventUrl(); ?>">
+                                <div class="card">
+                                    <div class="grid-9">
+                                        <img src="<?php echo $event->getPictureUrl(); ?>">
+                                    </div>
+                                    <div class="when">
+                                        <p>
+                                            <?php echo $event->getFormattedDate(); ?>
+                                        </p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="event-detail">
+                                        <h3><?php echo $event->name; ?></h3>
+                                        <p>
+                                            <?php echo $event->location; ?>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="event middle">
-                    <a href="http://facebook.com">
-                        <div class="card">
-                            <div class="grid-9">
-                                <img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/t1.0-9/c137.0.160.160/p160x160/10300052_662348367174651_893665167052107325_n.jpg">
-                            </div>
-                            <div class="when">
-                                <p>
-                                    Tuesday
-                                    <br />
-                                    July 15
-                                    <br />
-                                    7:00 PM
-                                </p>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="event-detail">
-                                <h3>7's training</h3>
-                                <p>
-                                    J.Sargeant Reynolds in Richmond, Virginia
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="event">
-                    <a href="http://facebook.com">
-                        <div class="card">
-                            <div class="grid-9">
-                                <img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/t1.0-9/c137.0.160.160/p160x160/10300052_662348367174651_893665167052107325_n.jpg">
-                            </div>
-                            <div class="when">
-                                <p>
-                                    Thursday
-                                    <br />
-                                    July 17
-                                    <br />
-                                    7:00 PM
-                                </p>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="event-detail">
-                                <h3>7's training</h3>
-                                <p>
-                                    J.Sargeant Reynolds in Richmond, Virginia
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
                 <div class="clear"></div>
             </div>
             <div class="section-link">

@@ -34,7 +34,11 @@ class SiteController extends Controller
         Yii::app()->clientScript->registerScriptFile('/js/skrollr.min.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile('/js/main.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile('/js/initskrollr.js', CClientScript::POS_END);
-		$this->render('index');
+
+        $announcements = new AnnouncementsModel(5, new DateInterval('P3M'));
+        $events = new UpcomingEventsModel(3);
+
+		$this->render('index', array('announcements' => $announcements, 'events' => $events));
 	}
 
     public function actionSponsors()
@@ -83,11 +87,9 @@ class SiteController extends Controller
 
     public function actionFbtest()
     {
-        Yii::import('application.lib.facebook.request.post.PostsCollectionGet');
+        $model = new UpcomingEventsModel(3);
         echo '<pre>';
-        $request = new PostsCollectionGet();
-        $response = $request->get();
-        print_r($response);
+        print_r($model->events);
         echo '</pre>';
         exit;
     }

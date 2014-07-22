@@ -30,10 +30,10 @@ class SiteController extends Controller
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
         $this->layout = 'main';
-        Yii::app()->clientScript->registerCSSFile('/css/index.css');
-        Yii::app()->clientScript->registerScriptFile('/js/skrollr.min.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerScriptFile('/js/main.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerScriptFile('/js/initskrollr.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerCSSFile('/content/css/index.css');
+        Yii::app()->clientScript->registerScriptFile('/content/js/skrollr.min.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/content/js/main.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/content/js/initskrollr.js', CClientScript::POS_END);
 
         $announcements = new AnnouncementsModel(5, new DateInterval('P3M'));
         $events = new UpcomingEventsModel(3);
@@ -44,8 +44,8 @@ class SiteController extends Controller
     public function actionSponsors()
     {
         $this->layout = 'main';
-        Yii::app()->clientScript->registerCSSFile('/css/sponsors.css');
-        Yii::app()->clientScript->registerScriptFile('/js/main.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerCSSFile('/content/css/sponsors.css');
+        Yii::app()->clientScript->registerScriptFile('/content/js/main.js', CClientScript::POS_END);
         $this->render('sponsors');
     }
 
@@ -53,9 +53,9 @@ class SiteController extends Controller
     {
         $this->layout = 'main';
 
-        Yii::app()->clientScript->registerScriptFile('/js/skrollr.min.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerScriptFile('/js/main.js', CClientScript::POS_END);
-//        Yii::app()->clientScript->registerScriptFile('/js/initskrollr.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/content/js/skrollr.min.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/content/js/main.js', CClientScript::POS_END);
+//        Yii::app()->clientScript->registerScriptFile('/content/js/initskrollr.js', CClientScript::POS_END);
 
         $model = new NewPlayerForm();
         if(isset($_POST['NewPlayerForm']))
@@ -65,23 +65,23 @@ class SiteController extends Controller
             {
                 $model->emailResults();
 
-                Yii::app()->clientScript->registerCSSFile('/css/sponsors.css');
+                Yii::app()->clientScript->registerCSSFile('/content/css/sponsors.css');
                 $this->render('newPlayerThanks');
                 return;
             }
         }
 
-        Yii::app()->clientScript->registerCSSFile('/css/join.css');
+        Yii::app()->clientScript->registerCSSFile('/content/css/join.css');
         $this->render('join', array('model'=>$model));
     }
 
     public function actionAbout()
     {
         $this->layout = 'main';
-        Yii::app()->clientScript->registerCSSFile('/css/about.css');
-        Yii::app()->clientScript->registerScriptFile('/js/skrollr.min.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerScriptFile('/js/main.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerScriptFile('/js/initskrollr.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerCSSFile('/content/css/about.css');
+        Yii::app()->clientScript->registerScriptFile('/content/js/skrollr.min.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/content/js/main.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/content/js/initskrollr.js', CClientScript::POS_END);
         $this->render('about');
     }
 

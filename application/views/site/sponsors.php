@@ -24,7 +24,7 @@ $this->pageTitle='Richmond Lions Rugby Club Sponsors'
             <div class="card">
                 <div class="square">
                     <div class="sponsor-logo">
-                        <img src="/images/sponsors/pbr_logo.png">
+                        <img src="/content/images/sponsors/pbr_logo.png">
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ $this->pageTitle='Richmond Lions Rugby Club Sponsors'
                 <div class="card">
                     <div class="square">
                         <div class="sponsor-logo">
-                            <img src="/images/sponsors/gus_logo.png">
+                            <img src="/content/images/sponsors/gus_logo.png">
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ $this->pageTitle='Richmond Lions Rugby Club Sponsors'
                 <div class="card">
                     <div class="square">
                         <div class="sponsor-logo">
-                            <img src="/images/sponsors/advanced_logo.png">
+                            <img src="/content/images/sponsors/advanced_logo.png">
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ $this->pageTitle='Richmond Lions Rugby Club Sponsors'
             <div class="card">
                 <div class="square">
                     <div class="sponsor-logo">
-                        <img src="/images/sponsors/long_foster_logo.png">
+                        <img src="/content/images/sponsors/long_foster_logo.png">
                     </div>
                 </div>
             </div>

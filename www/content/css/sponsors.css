@@ -121,17 +121,17 @@ main section .card .sponsor-logo img
 
 main section.pbr
 {
-    background-image: url('/images/sponsors/pbr_wide.jpg');
+    background-image: url('/content/images/sponsors/pbr_wide.jpg');
 }
 
 main section.gus
 {
-    background-image: url('/images/sponsors/gus_wide.png');
+    background-image: url('/content/images/sponsors/gus_wide.png');
 }
 
 main section.advanced
 {
-    background-image: url('/images/sponsors/advanced_wide_2.png');
+    background-image: url('/content/images/sponsors/advanced_wide_2.png');
 }
 
 main section .text-container h3

@@ -76,7 +76,7 @@ header h1
 
 header h1 a
 {
-    background: url('/images/lion_shield_small.png') no-repeat left center;
+    background: url('/content/images/lion_shield_small.png') no-repeat left center;
     font-size: 30px;
     padding: 5px 0 5px 25px;
 }

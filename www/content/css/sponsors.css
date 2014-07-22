@@ -16,6 +16,37 @@ main section.first p
     text-align: center;
 }
 
+main section h3 a
+{
+    text-decoration: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+main section.dark h3 a
+{
+    color: white;
+}
+
+main section.light h3 a
+{
+    color: black;
+}
+
+main section.dark h3 a:hover,
+main section.dark h3 a:active
+{
+    color: #D2D2D2;
+}
+
+main section.light h3 a:hover,
+main section.light h3 a:active
+{
+    color: #505050;
+}
+
 main section.first a
 {
     color: #da1b18;
@@ -119,6 +150,12 @@ main section .card .sponsor-logo img
     right: 0;
 }
 
+main section.amazon
+{
+    background-image: url('/content/images/sponsors/amazon-smile_large.jpg');
+    background-position: 50% -230px;
+}
+
 main section.pbr
 {
     background-image: url('/content/images/sponsors/pbr_wide.jpg');
@@ -144,14 +181,20 @@ main section .text-container, main section .card-container
     display: inline-block;
 }
 
-main section.pbr .text-container, main section.gus .card-container,
-main section.advanced .text-container, main section.long-foster .card-container
+main section.amazon .text-container,
+main section.impact .card-container,
+main section.pbr .text-container,
+main section.gus .card-container,
+main section.advanced .text-container
 {
     float: left;
 }
 
-main section.pbr .card-container, main section.gus .text-container,
-main section.advanced .card-container, main section.long-foster .text-container
+main section.amazon .card-container,
+main section.impact .text-container,
+main section.pbr .card-container,
+main section.gus .text-container,
+main section.advanced .card-container
 {
     float: right;
 }
@@ -169,14 +212,11 @@ main section .text-container
     }
 }
 
-@media (max-width: 729px)
+@media (max-width: 767px)
 {
-    main section.long-foster .text-container, main section.long-foster .card-container
+    main section.amazon
     {
-        float: none;
-        width: 100%;
-        max-width: none;
-        text-align: center;
+        background-position: 50% 50%;
     }
 }
 

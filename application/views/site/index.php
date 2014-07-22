@@ -183,7 +183,7 @@ $this->pageTitle='Richmond Lions Rugby Club'
                     </a>
                 </div>
                 <div class="sponsor">
-                    <a href="//gusbarandgrill.com/">
+                    <a href="//gusbarandgrill.com">
                         <div class="card">
                             <div class="square">
                                 <div class="sponsor-logo">

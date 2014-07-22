@@ -78,7 +78,13 @@ class PostModel extends FacebookModelBase
             return $this->formattedMessage;
         }
 
-        $this->formattedMessage = $this->message;
+        $count = 0;
+        $this->formattedMessage = preg_replace('#(https?://\S+)#i', '<a href="$1">$1</a>', $this->message, -1, &$count);
+        if ($this->type == 'link' && !empty($this->link) && $count == 0)
+        {
+            $this->formattedMessage .= '<br /><a href="' . $this->link . '">' . $this->link . '</a>';
+        }
+
         return $this->formattedMessage;
     }
 

@@ -76,7 +76,7 @@ header h1
 
 header h1 a
 {
-    background: url('/content/images/lion_shield_small.png') no-repeat left center;
+    background: url('/content/images/LionsShield38Tall.png') no-repeat left center;
     font-size: 30px;
     padding: 5px 0 5px 25px;
 }
@@ -322,6 +322,8 @@ footer div a:active
 
     header h1 a
     {
+        /*background-image: url('/content/images/LionsShield28Tall.png');*/
+        background-image: url('/content/images/LionsShield38Tall.png');
         background-size: auto 28px;
         font-size: 26px;
         padding: 7px 0 7px 18px;

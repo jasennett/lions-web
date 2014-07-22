@@ -139,49 +139,59 @@ $this->pageTitle='Richmond Lions Rugby Club'
             </div>
             <div class="sponsors-list">
                 <div class="sponsor">
-                    <div class="card">
-                        <div class="square">
-                            <div class="sponsor-logo">
-                                <img src="/content/images/sponsors/pbr_logo.png">
+                    <a href="http://www.amazon.com/ref=as_li_ss_sm_fb_us_ndp_tl?_encoding=UTF8&camp=213733&creative=399841&linkCode=shr&tag=richmrugbyfou-20">
+                        <div class="card">
+                            <div class="square">
+                                <div class="sponsor-logo">
+                                    <img src="/content/images/sponsors/amazon_logo.jpg">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="sponsor">
-                    <div class="card">
-                        <div class="square">
-                            <div class="sponsor-logo">
-                                <img src="/content/images/sponsors/pbr_logo.png">
+                    <a href="https://docs.google.com/forms/d/14a5p_YJSr07Dp6wW4_HORQAC1lNpUnDONAvjPUC0vj8/viewform?usp=send_form">
+                        <div class="card">
+                            <div class="square">
+                                <div class="sponsor-logo">
+                                    <img src="/content/images/sponsors/impact_insurance_logo.jpg">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="sponsor">
-                    <div class="card">
-                        <div class="square">
-                            <div class="sponsor-logo">
-                                <img src="/content/images/sponsors/gus_logo.png">
+                    <a href="//pabstblueribbon.com">
+                        <div class="card">
+                            <div class="square">
+                                <div class="sponsor-logo">
+                                    <img src="/content/images/sponsors/pbr_logo.jpg">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="sponsor">
-                    <div class="card">
-                        <div class="square">
-                            <div class="sponsor-logo">
-                                <img src="/content/images/sponsors/advanced_logo.png">
+                    <a href="//advancedortho.me">
+                        <div class="card">
+                            <div class="square">
+                                <div class="sponsor-logo">
+                                    <img src="/content/images/sponsors/advanced_logo.jpg">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="sponsor">
-                    <div class="card">
-                        <div class="square">
-                            <div class="sponsor-logo">
-                                <img src="/content/images/sponsors/long_foster_logo.png">
+                    <a href="//gusbarandgrill.com/">
+                        <div class="card">
+                            <div class="square">
+                                <div class="sponsor-logo">
+                                    <img src="/content/images/sponsors/gus_logo.jpg">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="clear"></div>
             </div>

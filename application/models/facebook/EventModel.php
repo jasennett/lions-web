@@ -43,7 +43,9 @@ class EventModel extends FacebookModelBase
             return $this->formattedDate;
         }
 
-        $this->formattedDate = $this->startTime->format('l<br />F j<br />g:i A');
+        $startTime = $this->startTime;
+        $this->formattedDate = $startTime->format('l') . '<br />' . $startTime->format('F j') .
+            '<br />' . $startTime->format('g:i A');
         return $this->formattedDate;
     }
 

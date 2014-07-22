@@ -128,7 +128,8 @@ nav .social li a
     transition: opacity 0.3s;
 }
 
-nav .social li a:hover
+nav .social li a:hover,
+nav .social li a:active
 {
     opacity: .8;
 }

@@ -15,9 +15,4 @@ class EventsCollectionGet extends RequestBase
     {
         return FacebookSettings::$LIONS_FAN_PAGE_ID . '/events';
     }
-
-    public function getQueryStringParams()
-    {
-        return null;
-    }
 }

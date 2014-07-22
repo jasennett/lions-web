@@ -4,6 +4,11 @@ Yii::import('application.lib.facebook.RequestSender');
 
 abstract class RequestBase implements IRequest
 {
+    /**
+     * @var int
+     */
+    public $limit;
+
     public function get()
     {
         $sender = new RequestSender();
@@ -12,5 +17,15 @@ abstract class RequestBase implements IRequest
         {
             return json_decode($response->content);
         }
+    }
+
+    public function getQueryStringParams()
+    {
+        if (isset($this->limit))
+        {
+            return array('limit'=>$this->limit);
+        }
+
+        return array();
     }
 }

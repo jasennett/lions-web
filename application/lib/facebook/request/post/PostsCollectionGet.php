@@ -15,9 +15,4 @@ class PostsCollectionGet extends RequestBase
     {
         return FacebookSettings::$LIONS_FAN_PAGE_ID . '/posts';
     }
-
-    public function getQueryStringParams()
-    {
-        return null;
-    }
 }

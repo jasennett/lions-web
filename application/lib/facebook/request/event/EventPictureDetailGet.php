@@ -24,6 +24,8 @@ class EventPictureDetailGet extends RequestBase
 
     public function getQueryStringParams()
     {
-        return array('redirect' => 'false', 'type' => $this->size);
+        return array_merge(
+            parent::getQueryStringParams(),
+            array('redirect' => 'false', 'type' => $this->size));
     }
 }

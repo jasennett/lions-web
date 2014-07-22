@@ -24,6 +24,9 @@ class UpcomingEventsModel
         $this->events = array();
 
         $request = new EventsCollectionGet();
+        // set a high limit to request a large amount of events so we don't have to deal with paging
+        // (and therefore multiple api calls)
+        $request->limit = 200;
         $response = $request->get();
 
         if (empty($response) || empty($response->data))

@@ -274,7 +274,7 @@ main section.sponsors .sponsor
 {
     float: left;
     display: inline-block;
-    width: 25%;
+    width: 20%;
 }
 
 main section.sponsors .sponsor .card
@@ -377,22 +377,22 @@ main section.sponsors .sponsor .card .sponsor-logo img
 
     main section.sponsors .sponsor
     {
-        width: 50%;
-    }
-}
-
-@media (max-width: 480px)
-{
-    main section.sponsors .sponsor
-    {
         width: 100%;
     }
 
     main section.sponsors .sponsor .card
     {
-        max-width: 240px;
+        max-width: 340px;
         position: relative;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (max-width: 480px)
+{
+    main section.sponsors .sponsor .card
+    {
+        max-width: 240px;
     }
 }

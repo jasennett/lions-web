@@ -151,6 +151,15 @@ $this->pageTitle='Richmond Lions Rugby Club'
                     <div class="card">
                         <div class="square">
                             <div class="sponsor-logo">
+                                <img src="/images/sponsors/pbr_logo.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsor">
+                    <div class="card">
+                        <div class="square">
+                            <div class="sponsor-logo">
                                 <img src="/images/sponsors/gus_logo.png">
                             </div>
                         </div>

@@ -1,7 +1,5 @@
 <?php
 /* @var $this SiteController */
-/* @var $announcements AnnouncementsModel */
-/* @var $events UpcomingEventsModel */
 
 $this->pageTitle='Richmond Lions Rugby Club'
 ?>
@@ -43,7 +41,7 @@ $this->pageTitle='Richmond Lions Rugby Club'
     </div>
 </section>
 
-<section class="announcements light-grey">
+<section class="announcements light light-grey">
     <div class="content">
         <div class="gutter">
             <div class="section-name">
@@ -53,36 +51,16 @@ $this->pageTitle='Richmond Lions Rugby Club'
                 <h2>Announcements</h2>
             </div>
             <div class="messages">
-                <?php if(empty($announcements->announcements)): ?>
-                    <p>No announcements copy.</p>
-                <?php else: ?>
-                    <?php foreach($announcements->announcements as $announcement): ?>
-                        <div class="message">
-                            <div class="card">
-                                <p class="text">
-                                    <?php echo $announcement->getFormattedMessage(); ?>
-                                </p>
-
-                                <div class="when">
-                                    <p>
-                                        <a href="<?php echo $announcement->getPostUrl(); ?>">
-                                            <?php echo $announcement->getFormattedDate(); ?>
-                                        </a>
-                                    </p>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-
-                        </div>
-                    <?php endforeach; ?>
-                <?php endif; ?>
-                <div class="clear"></div>
+                <div class="placeholder">
+                    <p class="alternate"><?php $this->renderPartial('/partial/noAnnouncements') ?></p>
+                    <p class="loading">Loading announcements...</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="events dark-grey">
+<section class="events dark dark-grey">
     <div class="content">
         <div class="gutter">
             <div class="section-name">
@@ -92,34 +70,10 @@ $this->pageTitle='Richmond Lions Rugby Club'
                 <h2>Upcoming Events</h2>
             </div>
             <div class="upcoming">
-                <?php if(empty($events->events)): ?>
-                    <p>No events copy.</p>
-                <?php else: ?>
-                    <?php foreach($events->events as $i=>$event): ?>
-                        <div class="event<?php echo $i == 1 ? ' middle' : ''; ?>">
-                            <a href="<?php echo $event->getEventUrl(); ?>">
-                                <div class="card">
-                                    <div class="grid-9">
-                                        <img src="<?php echo $event->getPictureUrl(); ?>">
-                                    </div>
-                                    <div class="when">
-                                        <p>
-                                            <?php echo $event->getFormattedDate(); ?>
-                                        </p>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <div class="event-detail">
-                                        <h3><?php echo $event->name; ?></h3>
-                                        <p>
-                                            <?php echo $event->location; ?>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    <?php endforeach; ?>
-                <?php endif; ?>
-                <div class="clear"></div>
+                <div class="placeholder">
+                    <p class="alternate"><?php $this->renderPartial('/partial/noEvents') ?></p>
+                    <p class="loading">Loading events...</p>
+                </div>
             </div>
             <div class="section-link">
                 <?=CHtml::link('More Events', '//facebook.com/RichmondLions/events', array('class' => 'section-button'))?>

@@ -177,6 +177,47 @@ main section .content .section-name h2
     margin: 0;
 }
 
+main section .content .placeholder
+{
+    text-align: center;
+    margin-top: 15px;
+}
+
+main section .content .placeholder a
+{
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+main section.light .content .placeholder a
+{
+    color: #da1b18;
+}
+
+main section.light .content .placeholder a:hover,
+main section.light .content .placeholder a:active
+{
+    color: #f41c19;
+}
+
+main section.dark .content .placeholder a
+{
+    color: #ffffff;
+}
+
+main section.dark .content .placeholder a:hover,
+main section.dark .content .placeholder a:active
+{
+    color: #D2D2D2;
+}
+
+main section .content .loading
+{
+    display: none;
+}
+
 main section.events .event
 {
     float: left;

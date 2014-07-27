@@ -9,6 +9,11 @@ abstract class RequestBase implements IRequest
      */
     public $limit;
 
+    /**
+     * @var string
+     */
+    public $fields;
+
     public function get()
     {
         $sender = new RequestSender();
@@ -21,11 +26,17 @@ abstract class RequestBase implements IRequest
 
     public function getQueryStringParams()
     {
+        $result = array();
         if (isset($this->limit))
         {
-            return array('limit'=>$this->limit);
+            $result['limit'] = $this->limit;
         }
 
-        return array();
+        if (isset($this->fields))
+        {
+            $result['fields'] = $this->fields;
+        }
+
+        return $result;
     }
 }

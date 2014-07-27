@@ -1,0 +1,1 @@
+Check our <a href="//facebook.com/RichmondLions/events">facebook page</a> for upcoming events.

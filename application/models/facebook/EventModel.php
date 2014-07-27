@@ -31,6 +31,7 @@ class EventModel extends FacebookModelBase
             $detail,
             array('id'=>'id', 'location'=>'location', 'name'=>'name'));
         $this->startTime = DateTime::createFromFormat(DateTime::ISO8601, $detail->start_time);
+        $this->pictureUrl = $detail->picture->data->url;
     }
 
     /**

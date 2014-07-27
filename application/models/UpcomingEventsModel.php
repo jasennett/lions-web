@@ -27,6 +27,7 @@ class UpcomingEventsModel
         // set a high limit to request a large amount of events so we don't have to deal with paging
         // (and therefore multiple api calls)
         $request->limit = 200;
+        $request->fields = 'start_time,name,location,picture.type(normal)';
         $response = $request->get();
 
         if (empty($response) || empty($response->data))
@@ -62,7 +63,6 @@ class UpcomingEventsModel
         foreach ($allEvents as $event)
         {
             /** @var $event EventModel */
-            $event->getPictureUrl();
             $this->events[] = $event;
             if (count($this->events) >= $this->num)
             {

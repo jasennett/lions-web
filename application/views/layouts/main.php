@@ -23,6 +23,7 @@
 </head>
 
 <body<?=$this->solidHeader ? ' class="solid-header"' : ''?>>
+<?php $this->renderPartial('/partial/analyticsTag'); ?>
 <header>
     <div class="header-padding"></div>
     <div class="header-bounds">

@@ -41,6 +41,7 @@
                     <li><?=CHtml::link('Sponsors', $this->createUrl('site/sponsors'))?></li>
                     <li><?=CHtml::link('Join', $this->createUrl('site/join'))?></li>
                     <li><?=CHtml::link('About', $this->createUrl('site/about'))?></li>
+                    <li><?=CHtml::link('Store', 'https://mkt.com/richmond-lions-rugby-fc')?></li>
                 </ul>
 
                 <ul class="social">
@@ -79,6 +80,7 @@
             <li><?=CHtml::link('Sponsors', $this->createUrl('site/sponsors'))?></li>
             <li><?=CHtml::link('Join', $this->createUrl('site/join'))?></li>
             <li><?=CHtml::link('About', $this->createUrl('site/about'))?></li>
+            <li><?=CHtml::link('Store', 'https://mkt.com/richmond-lions-rugby-fc')?></li>
         </ul>
     </nav>
 

@@ -45,7 +45,7 @@ $this->pageTitle='About Richmond Lions Rugby Club'
                 <div class="officer">
                     <h3>Vice President</h3>
                     <p>
-                        <a href="mailto:vp@richmondlions.com">Somebody Somebody</a>
+                        <a href="mailto:vp@richmondlions.com">Nate Sirota</a>
                         <br />
                         vp@richmondlions.com
                     </p>
@@ -53,7 +53,7 @@ $this->pageTitle='About Richmond Lions Rugby Club'
                 <div class="officer">
                     <h3>Treasurer</h3>
                     <p>
-                        <a href="mailto:treasurer@richmondlions.com">Somebody Somebody</a>
+                        <a href="mailto:treasurer@richmondlions.com">Ben Goeke</a>
                         <br />
                         treasurer@richmondlions.com
                     </p>
@@ -61,7 +61,7 @@ $this->pageTitle='About Richmond Lions Rugby Club'
                 <div class="officer">
                     <h3>Club Secretary</h3>
                     <p>
-                        <a href="mailto:secretary@richmondlions.com">Somebody Somebody</a>
+                        <a href="mailto:secretary@richmondlions.com">Chris Knight</a>
                         <br />
                         secretary@richmondlions.com
                     </p>
@@ -69,7 +69,7 @@ $this->pageTitle='About Richmond Lions Rugby Club'
                 <div class="officer">
                     <h3>Match Secretary</h3>
                     <p>
-                        <a href="mailto:match@richmondlions.com">Somebody Somebody</a>
+                        <a href="mailto:match@richmondlions.com">Anthony Greulich</a>
                         <br />
                         match@richmondlions.com
                     </p>
@@ -77,7 +77,7 @@ $this->pageTitle='About Richmond Lions Rugby Club'
                 <div class="officer">
                     <h3>Equipment/Apparel</h3>
                     <p>
-                        <a href="mailto:gear@richmondlions.com">Somebody Somebody</a>
+                        <a href="mailto:gear@richmondlions.com">Brooks Crawford</a>
                         <br />
                         gear@richmondlions.com
                     </p>
@@ -85,15 +85,15 @@ $this->pageTitle='About Richmond Lions Rugby Club'
                 <div class="officer">
                     <h3>Events Coordinator</h3>
                     <p>
-                        <a href="mailto:events@richmondlions.com">Somebody Somebody</a>
+                        <a href="mailto:events@richmondlions.com">Josh Self</a>
                         <br />
                         events@richmondlions.com
                     </p>
                 </div>
                 <div class="officer">
-                    <h3>Fundraising/PR</h3>
+                    <h3>Fundraising</h3>
                     <p>
-                        <a href="mailto:fundraising@richmondlions.com">Somebody Somebody</a>
+                        <a href="mailto:fundraising@richmondlions.com">Open (Nate Sirota)</a>
                         <br />
                         fundraising@richmondlions.com
                     </p>

@@ -26,4 +26,10 @@ class Controller extends CController
      * @var bool
      */
     public $solidHeader;
+
+    /**
+     * View to use to render SEO data.
+     * @var string
+     */
+    public $seo;
 }

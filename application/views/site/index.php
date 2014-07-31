@@ -1,7 +1,7 @@
 <?php
 /* @var $this SiteController */
 
-$this->pageTitle='Richmond Lions Rugby Club'
+$this->pageTitle='Richmond Lions Rugby Football Club'
 ?>
 
 <section class="first about fixed" data-top="background-position: 50% 0px" data-top-bottom="background-position: 50% 200px">

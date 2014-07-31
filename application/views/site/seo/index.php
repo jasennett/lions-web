@@ -1,0 +1,3 @@
+<meta name="title" content="<?php echo CHtml::encode($this->pageTitle); ?>" />
+<meta name="description" content="Richmond Lions RFC is the area's competitive Men's Rugby Club (Division II). Established in 1963, the Lions offer quality rugby and a wide variety of social events throughout the year to athletes of all ages, experience, and backgrounds." />
+<meta name="keywords" content="rugby, rugby union, Lions, Richmond, Virginia, VA, MARFU, VRU, Dorey Park, Henrico, West End, Chesterfield" />

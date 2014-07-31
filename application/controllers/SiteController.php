@@ -30,6 +30,7 @@ class SiteController extends Controller
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
         $this->layout = 'main';
+        $this->seo = 'seo/index';
         Yii::app()->clientScript->registerCSSFile('/content/css/index.css');
         Yii::app()->clientScript->registerScriptFile('/content/js/skrollr.min.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile('/content/js/main.js', CClientScript::POS_END);

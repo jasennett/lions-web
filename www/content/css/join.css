@@ -62,14 +62,15 @@ main section.how-to-join .content p strong
 main section.how-to-join .content a
 {
     text-decoration: none;
-    color: #da1b18;
+    /*color: #da1b18;*/
+    color: #D2D2D2;
 }
 
 main section.how-to-join .content a:hover,
 main section.how-to-join .content a:active
 {
-    /*color: #D2D2D2;*/
-    color: #f41c19;
+    color: #ffffff;
+    /*color: #f41c19;*/
 }
 
 main section.new-player .anchor-wrapper

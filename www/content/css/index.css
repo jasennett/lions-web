@@ -43,8 +43,8 @@ main section.about .history
 main section.about a
 {
     text-decoration: none;
-    color: #da1b18;
-    /*color: #ffffff;*/
+    /*color: #da1b18;*/
+    color: #D2D2D2;
 
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
@@ -55,8 +55,8 @@ main section.about a
 main section.about a:hover,
 main section.about a:active
 {
-    color: #f41c19;
-    /*color: #D2D2D2;*/
+    color: #ffffff;
+    /*color: #f41c19;*/
 }
 
 main section.light-grey, main section.dark-grey

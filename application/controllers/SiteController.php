@@ -37,7 +37,8 @@ class SiteController extends Controller
         Yii::app()->clientScript->registerScriptFile('/content/js/initskrollr.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile('/content/js/index.js', CClientScript::POS_END);
 
-		$this->render('index');
+        $persistentAnnouncements = new PersistentAnnouncementsModel();
+		$this->render('index', array('persistentAnnouncements'=>$persistentAnnouncements));
 	}
 
     public function actionSponsors()

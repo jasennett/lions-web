@@ -1,5 +1,6 @@
 <?php
 /* @var $this SiteController */
+/* @var $persistentAnnouncements PersistentAnnouncementsModel */
 
 $this->pageTitle='Richmond Lions Rugby Football Club'
 ?>
@@ -51,6 +52,26 @@ $this->pageTitle='Richmond Lions Rugby Football Club'
                 <h2>Announcements</h2>
             </div>
             <div class="messages">
+                <?php
+                if (!empty($persistentAnnouncements->announcements))
+                {
+                    foreach($persistentAnnouncements->announcements as $announcement)
+                    {
+                    ?>
+                        <div class="message persistent">
+                            <div class="card">
+                                <h3><?php echo $announcement->title ?></h3>
+                                <p class="text">
+                                    <?php echo $announcement->message ?>
+                                </p>
+                            </div>
+                        </div>
+                    <?php
+                    }
+
+                    echo '<div class="clear"></div>';
+                }
+                ?>
                 <div class="placeholder">
                     <p class="alternate"><?php $this->renderPartial('/partial/noAnnouncements') ?></p>
                     <p class="loading">Loading announcements...</p>

@@ -107,6 +107,18 @@ main section.announcements .message .card .text a
     text-decoration: underline;
 }
 
+main section.announcements .message .card h3
+{
+    color: #f50c1c;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+main section.announcements .persistent .text
+{
+    margin-bottom: 5px;
+}
+
 main section.announcements .message .card .text
 {
     font-size: 22px;

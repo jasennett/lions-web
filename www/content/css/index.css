@@ -40,6 +40,25 @@ main section.about .history
     margin-bottom: 20px;
 }
 
+main section.about a
+{
+    text-decoration: none;
+    color: #da1b18;
+    /*color: #ffffff;*/
+
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+main section.about a:hover,
+main section.about a:active
+{
+    color: #f41c19;
+    /*color: #D2D2D2;*/
+}
+
 main section.light-grey, main section.dark-grey
 {
     -moz-box-shadow: 0 0 6px rgba(0,0,0,1);

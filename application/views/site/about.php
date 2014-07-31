@@ -15,11 +15,8 @@ $this->pageTitle='About Richmond Lions Rugby Club'
                     <p class="continued">
                         The history of the Richmond Lions RFC is derived from the storied origins of the Richmond Rugby Football Club and the Richmond Area Training Side (R.A.T.S.), founded by one of the early members of the Richmond RFC.
                     </p>
-                    <p>
-                        In 1995 the two clubs merged to form Richmond United. Moving forward towards the goal of gaining more recognition and establishing a brand, in 2004 United became known as the Richmond Lions.
-                    </p>
                     <p class="fade-anchor">
-                        For a more in-depth look of our rich rugby history and tradition, visit the <a href="http://sites.google.com/site/richmondrugbyfoundation/history/richmond-rfc">Complete Club History</a> maintained by Cary Kennedy & Liam Riley.
+                        In 1995 the two clubs merged to form Richmond United. Moving forward towards the goal of gaining more recognition and establishing a brand, in 2004 United became known as the Richmond Lions.
                     </p>
                 </div>
             </div>

@@ -47,7 +47,7 @@ main section.light h3 a:active
     color: #505050;
 }
 
-main section.first a
+main section.light a
 {
     color: #da1b18;
 
@@ -57,10 +57,26 @@ main section.first a
     transition: color 0.3s;
 }
 
-main section.first a:hover,
-main section.first a:active
+main section.light a:hover,
+main section.light a:active
 {
     color: #f41c19;
+}
+
+main section.dark a
+{
+    color: #D2D2D2;;
+
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+main section.dark a:hover,
+main section.dark a:active
+{
+    color: #ffffff;
 }
 
 main section h3
@@ -70,6 +86,24 @@ main section h3
     font-weight: 300;
     display: inline-block;
     margin: auto;
+}
+
+main section.sponsor .content
+{
+    position: relative;
+    min-height: 260px;
+}
+
+main section.sponsor .content .text-container p
+{
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+main section.sponsor .content .card-container
+{
+    position: absolute;
+    top: 0;
 }
 
 main section .card
@@ -181,27 +215,38 @@ main section .text-container, main section .card-container
     display: inline-block;
 }
 
-main section.amazon .text-container,
 main section.impact .card-container,
+main section.gus .card-container
+{
+    left: 0;
+    /*float: left;*/
+}
+
+main section.amazon .text-container,
 main section.pbr .text-container,
-main section.gus .card-container,
 main section.advanced .text-container
 {
-    float: left;
+    margin-right: 260px;
 }
 
 main section.amazon .card-container,
-main section.impact .text-container,
 main section.pbr .card-container,
-main section.gus .text-container,
 main section.advanced .card-container
 {
-    float: right;
+    right: 0;
+    /*float: right;*/
 }
+
+main section.impact .text-container,
+main section.gus .text-container
+{
+    margin-left: 260px;
+}
+
 
 main section .text-container
 {
-    max-width: 430px;
+    /*max-width: 430px;*/
 }
 
 @media (min-width: 1024px)
@@ -227,9 +272,25 @@ main section .text-container
         padding: 45px 10px;
     }
 
-    main section .text-container, main section .card-container
+    main section.sponsor .content .text-container
     {
-        float: none;
+        margin: 0;
+    }
+
+    main section.sponsor .content .text-container p
+    {
+        margin-bottom: 0px;
+    }
+
+    main section.sponsor .content .text-container h3
+    {
+        padding-bottom: 10px;
+    }
+
+    main section.sponsor .content .text-container, main section.sponsor .content .card-container
+    {
+        position: relative;
+        /*float: none;*/
         width: 100%;
         max-width: none;
         text-align: center;

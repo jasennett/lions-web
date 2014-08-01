@@ -1,7 +1,7 @@
 main section.about
 {
     color: white;
-    background: url(/content/images/huddle.jpg) #0b333f no-repeat 50% 0px;
+    background: url(/content/images/huddle_1400.jpg) #0b333f no-repeat 50% 0px;
     /*background: url(/images/lions_team.jpg) #0b333f no-repeat 50% 0px fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -409,6 +409,11 @@ main section.sponsors .sponsor .card .sponsor-logo img
         display: block;
         float: right;
         margin-right: 5px;
+    }
+
+    main section.about
+    {
+        background-image: url(/content/images/huddle_m.jpg);
     }
 
     main section.about .content

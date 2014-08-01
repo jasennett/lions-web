@@ -46,9 +46,9 @@ $this->pageTitle='Richmond Lions Rugby Football Club'
     <div class="content">
         <div class="gutter">
             <div class="section-name">
-                <div class="icon">
-                    <span class="icon-megaphone"></span>
-                </div>
+<!--                <div class="icon">-->
+<!--                    <span class="icon-megaphone"></span>-->
+<!--                </div>-->
                 <h2>Announcements</h2>
             </div>
             <div class="messages">
@@ -85,9 +85,9 @@ $this->pageTitle='Richmond Lions Rugby Football Club'
     <div class="content">
         <div class="gutter">
             <div class="section-name">
-                <div class="icon">
-                    <span class="icon-calendar-empty"></span>
-                </div>
+<!--                <div class="icon">-->
+<!--                    <span class="icon-calendar-empty"></span>-->
+<!--                </div>-->
                 <h2>Upcoming Events</h2>
             </div>
             <div class="upcoming">
@@ -107,9 +107,9 @@ $this->pageTitle='Richmond Lions Rugby Football Club'
     <div class="content">
         <div class="gutter">
             <div class="section-name">
-                <div class="icon">
-                    <span class="icon-money"></span>
-                </div>
+<!--                <div class="icon">-->
+<!--                    <span class="icon-money"></span>-->
+<!--                </div>-->
                 <h2>Sponsors</h2>
             </div>
             <div class="sponsors-list">

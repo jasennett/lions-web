@@ -193,13 +193,13 @@ main section .content .gutter
 main section .content .section-name
 {
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 main section .content .section-name .icon
 {
     font-size: 34px;
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
 main section .content .section-name h2

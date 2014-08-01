@@ -251,6 +251,11 @@ main section .text-container
 
 @media (min-width: 1024px)
 {
+    main section.gus .content .text-container
+    {
+        margin-left: 0;
+    }
+
     main section.gus .card
     {
         visibility: hidden;

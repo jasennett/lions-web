@@ -1,7 +1,7 @@
 main section.about
 {
     color: white;
-    background: url(/content/images/richmond-1200x768.jpg) #0b333f no-repeat 50% 0;
+    background: url(/content/images/huddle.jpg) #0b333f no-repeat 50% 0px;
     /*background: url(/images/lions_team.jpg) #0b333f no-repeat 50% 0px fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -11,7 +11,7 @@ main section.about
 
 main section.about .about-wrap
 {
-    background-color: rgba(38, 41, 46, .5);
+    background-color: rgba(38, 41, 46, .6);
 }
 
 main section.about .content
@@ -44,7 +44,7 @@ main section.about a
 {
     text-decoration: none;
     /*color: #da1b18;*/
-    color: #D2D2D2;
+    color: rgba(210,210,210,1);
 
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;

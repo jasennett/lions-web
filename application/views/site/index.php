@@ -35,7 +35,7 @@ $this->pageTitle='Richmond Lions Rugby Football Club'
                     Located in historic Richmond, Virginia, USA, the Richmond Lions R.F.C. is the area's competitive Men's Rugby Club (Division II).
                 </h2>
                 <div class="new-members" data-anchor-target=".about-text" data-80-top-top="color: rgba(255,255,255,1)" data-0-top-bottom="color: rgba(255,255,255,0)">
-                    <a href="<?php echo $this->createUrl('site/join') ?>">New members</a> are always welcome.
+                    <a data-anchor-target=".about-text" data-80-top-top="opacity: 1" data-0-top-bottom="opacity: 0" href="<?php echo $this->createUrl('site/join') ?>">New members</a> are always welcome.
                 </div>
             </div>
         </div>

@@ -115,4 +115,9 @@ main section.officers .officer a:active
         text-align: center;
         margin-bottom: 30px;
     }
+
+    main section.officers .officer .noEmail
+    {
+        display: none;
+    }
 }

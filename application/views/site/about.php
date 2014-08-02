@@ -100,6 +100,42 @@ $this->pageTitle='About Richmond Lions Rugby Club'
                 </div>
                 <div class="clear"></div>
             </div>
+            <h2>Coaching and Player Development</h2>
+            <div class="board">
+                <div class="officer">
+                    <h3>Head Coach</h3>
+                    <p>
+                        <a href="mailto:coach@richmondlions.com">Matt Robinette</a>
+                        <br />
+                        coach@richmondlions.com
+                    </p>
+                </div>
+                <div class="officer">
+                    <h3>Assistant Coach</h3>
+                    <p>
+                        Ben Morgan
+                        <br />
+                        <div class="noEmail">&nbsp;</div>
+                    </p>
+                </div>
+                <div class="officer">
+                    <h3>Technical Advisor</h3>
+                    <p>
+                        Jeremey Frayne
+                        <br />
+                        <span class="noEmail">&nbsp;</span>
+                    </p>
+                </div>
+                <div class="officer">
+                    <h3>Youth Contact</h3>
+                    <p>
+                        <a href="mailto:youth@richmondlions.com">Stuart Willis</a>
+                        <br />
+                        youth@richmondlions.com
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </div>
         </div>
     </div>
 </section>

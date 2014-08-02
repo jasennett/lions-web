@@ -6,7 +6,11 @@ jQuery(document).ready(function($) {
         success: function(data)
         {
             $('.messages .placeholder').remove();
-            $('.messages').append(data.content);
+            $('.messages').append(data.messages);
+            if (data.more)
+            {
+                $('section.announcements .gutter').append(data.more);
+            }
         },
         error: function()
         {

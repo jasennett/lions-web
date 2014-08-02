@@ -2,7 +2,12 @@
 /** @var $this AjaxController */
 /** @var $model AnnouncementsModel */
 
-$events = $this->renderPartial('/partial/announcements', array('model'=>$model), true);
+$messages = $this->renderPartial('/partial/announcements', array('model'=>$model), true);
 $response = new stdClass();
-$response->content = $events;
+$response->messages = $messages;
+if (!empty($model->announcements))
+{
+    $response->more = $this->renderPartial('/partial/moreAnnouncementsButton', null, true);
+}
+
 echo json_encode($response);

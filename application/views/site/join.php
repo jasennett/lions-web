@@ -17,7 +17,7 @@ $this->pageTitle='Join Richmond Lions Rugby Club'
                         The <strong>Richmond Lions Rugby Football Club</strong> welcomes all players regardless of your sporting background, experience, age, or size. Our Club has a wide range of talent and experience; you will find your level. Be prepared to compete and have fun playing the best field sport in the world!
                     </p>
                     <p class="fade-anchor">
-                        The best way to get started is to simply show up to a <a href="//facebook.com/RichmondLions/events">practice</a>. You will be welcomed. You can also fill out our new player registration form below to tell us a little bit about yourself and we'll get in touch with you.
+                        The best way to get started is to simply show up to a <a data-anchor-target=".fade-anchor" data-80-top-top="opacity: 1" data-0-top-bottom="opacity: 0" href="//facebook.com/RichmondLions/events">practice</a>. You will be welcomed. You can also fill out our new player registration form below to tell us a little bit about yourself and we'll get in touch with you.
                     </p>
                 </div>
             </div>

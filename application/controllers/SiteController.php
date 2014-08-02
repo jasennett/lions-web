@@ -53,9 +53,7 @@ class SiteController extends Controller
     {
         $this->layout = 'main';
 
-        Yii::app()->clientScript->registerScriptFile('/content/js/skrollr.min.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile('/content/js/main.js', CClientScript::POS_END);
-//        Yii::app()->clientScript->registerScriptFile('/content/js/initskrollr.js', CClientScript::POS_END);
 
         $model = new NewPlayerForm();
         if(isset($_POST['NewPlayerForm']))
@@ -71,6 +69,8 @@ class SiteController extends Controller
             }
         }
 
+        Yii::app()->clientScript->registerScriptFile('/content/js/skrollr.min.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile('/content/js/initskrollr.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerCSSFile('/content/css/join.css');
         $this->render('join', array('model'=>$model));
     }
